@@ -1,2 +1,1 @@
-# server-email
-Simple email server with client
+Temat: 12. E-mail: system poczty elektronicznej

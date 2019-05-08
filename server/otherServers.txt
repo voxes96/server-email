@@ -1,0 +1,2 @@
+onet.pl localhost 1235 onetpass wppass
+gmail.pl localhost 1236 gmailpass wppassgmai

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane minHeight="260.0" minWidth="400.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientEmail.loginController">
+    <center>
+        <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="357.0" minWidth="10.0" prefWidth="95.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="393.0" minWidth="10.0" prefWidth="310.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="196.0" minHeight="10.0" percentHeight="30.0" prefHeight="96.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="249.0" minHeight="10.0" percentHeight="30.0" prefHeight="138.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="196.0" minHeight="10.0" percentHeight="30.0" prefHeight="96.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="196.0" minHeight="10.0" percentHeight="30.0" prefHeight="96.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="249.0" minHeight="10.0" percentHeight="20.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="171.0" minHeight="10.0" percentHeight="20.0" prefHeight="61.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Username" />
+                <Label text="Password" GridPane.rowIndex="1" />
+            <Label text="IP Adress" GridPane.rowIndex="2" />
+            <Label text="Port" GridPane.rowIndex="3" />
+                <TextField fx:id="usernameTextField" GridPane.columnIndex="1" />
+                <PasswordField fx:id="passwordPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="ipAddressTextField" text="127.0.0.1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="portTextField" text="1234" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <FlowPane alignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <children>
+                  <Label fx:id="errorLabel" alignment="TOP_CENTER" textAlignment="CENTER" textFill="RED" />
+               </children>
+            </FlowPane>
+                <FlowPane alignment="CENTER" hgap="50.0" vgap="10.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                    <children>
+                        <Button fx:id="loginButton" alignment="CENTER" mnemonicParsing="false" onAction="#loginButtonClicked" text="Login" textAlignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#createButtonClicked" text="Create" />
+                    </children>
+                </FlowPane>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </GridPane>
+    </center>
+</BorderPane>
